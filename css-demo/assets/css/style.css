@@ -2,6 +2,74 @@
 Stylesheet for CSS Demo
 */
 
+/* Box Sizing */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Global Styles */
+
 body {
     background-color:bisque;
+    font-family: 'Playfair Display', serif;
+    margin:0;
+}
+
+header.primary {
+    background-color:aquamarine;
+    text-align:center;
+    color:#ffffff;
+    padding-top:40px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+
+    /* T, R, B, L */
+    padding:40px 40px 40px 40px;
+
+    /* Top/Bottom Right/Left */
+    padding:40px;
+
+    text-shadow: 2px 2px 5px #000000;
+}
+
+head.primary h1 {
+    font-size:5rem;
+    margin:20px 0;
+}
+
+header.primary h1 a {
+    color:#fff;
+    text-decoration:none;
+}
+
+header.primary h2 {
+    font-size:1rem;
+}
+
+header.primary nav {}
+header.primary nav ul {
+    padding:0;
+}
+
+header.primary nav ul li{
+    /* Got rid of bullets. */
+    list-style-type:none;
+    background:blue
+}
+
+header.primary nav ul li a {
+    color:#ffffff;
+    text-decoration:none;
+    background-color:#000000;
+    /* Makes background color reach the ends of the box. */
+    display:block;
+    padding:8px 16px;
+    
 }
