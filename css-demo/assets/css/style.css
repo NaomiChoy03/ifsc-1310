@@ -13,6 +13,12 @@ html {
     box-sizing: inherit;
 }
 
+/* Utility Classes */
+.container {
+    width:70vw;
+    margin:40px auto;
+}
+
 /* Global Styles */
 
 body {
@@ -53,9 +59,26 @@ header.primary h2 {
     font-size:1rem;
 }
 
-header.primary nav {}
+header.primary nav {
+    width:80vw;
+    background:red;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
 header.primary nav ul {
     padding:0;
+    /* Makes them laid out horizontally. */
+    display:flex;
+    /* Default*/
+    /* row-reverse reverses the order */
+    flex-direction:row;
+
+    /* Centers elements */
+    justify-content:center;
+    /* Puts an even amount of space between the elements */
+    justify-content: space-between;
+
 }
 
 header.primary nav ul li{
@@ -71,5 +94,43 @@ header.primary nav ul li a {
     /* Makes background color reach the ends of the box. */
     display:block;
     padding:8px 16px;
-    
+    display:inline-block;
+    border-radius: 20px;
+    /* Determines how long a transition is. */
+    transition:.5s;
+}
+
+/* When you hover over the element. */
+header.primary nav a:hover {
+    background-color:rgba(0, 0, 0, .5);
+}
+
+#intro {
+    /* Border size, border thickness, border color */
+    border-bottom: 1px solid #000000;
+    padding-bottom: 2rem;
+}
+
+#intro h2 {
+    color:peru;
+    border-bottom: 1px solid #000000;
+}
+
+
+
+
+
+/* When your screen is less than max-width */
+@media screen and (max-width:500px) {
+    header.primary nav ul {
+        flex-direction:column;
+    }
+
+    header.primary nave a {
+        display:block;
+    }
+
+    header.primary nav li {
+        margin-bottom:10px;
+    }
 }
