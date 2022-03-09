@@ -23,6 +23,21 @@ img {
     max-width: 100%;
 }
 
+.img-right{
+    float:right;
+    margin-left:20px;
+}
+
+.img-left{
+    float:right;
+    margin-right:20px;
+}
+
+.img-center{
+    display:block;
+    margin:20px auto;
+}
+
 /* Global Styles */
 
 body {
@@ -190,6 +205,75 @@ article.widget footer {
     margin:0;
     text-align:center;
     text-transform:uppercase;
+}
+
+#additional-elements h2{
+    color:peru;
+}
+
+#additional-elements a{
+    color:peru;
+}
+
+#additional-elements a:hover{
+    text-decoration: none;
+}
+
+#additional-elements h3{
+    border-left:2px solid peru;
+    padding-left:10px;
+}
+
+table{
+    width:100%;
+    border:1px solid peru;
+    border-collapse:collapse;
+}
+
+tr:nth-child(even){
+    background-color:rgba(205, 133, 63, .5);
+}
+
+tr:hover{
+    background-color:rgba(205, 133, 63, .75);
+}
+
+td:nth-child(2n), td:nth-child(3n){
+    text-align:right;
+}
+
+th{
+    background:peru;
+    color:white;
+    padding:10px;
+}
+
+td{
+    border:1px solid peru;
+    padding:5px;
+}
+
+#additional-elements ul{
+    list-style-type:square;
+}
+
+#additional-elemnts ul ul ol{
+    list-style-type:disc;
+}
+
+dl{}
+
+dt{
+    font-weight:bold;
+}
+
+dd{
+    margin-left:0;
+}
+
+/* Adjacent Sibling Combinator */
+dd + dt{
+    margin-top:20px;
 }
 
 
