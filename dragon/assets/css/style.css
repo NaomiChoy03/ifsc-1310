@@ -1,0 +1,52 @@
+/*
+Stylesheet for Dragon
+*/
+
+/* Box Sizing */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global Styles */
+
+body{
+    font-family: 'Bitter', serif;
+    background-color: bisque;
+}
+
+header.primary {
+    background-color: peru;
+    text-align:center;
+    padding: 10px;
+}
+
+header.primary nav ul {
+    padding:20px;
+    display:flex;
+    flex-direction:row;
+
+    justify-content:center;
+    justify-content: space-between;
+    list-style-type:none;
+}
+
+header.primary nav ul li{
+    padding:10px;
+    text-align:center;
+    background-color: royalblue;
+}
+
+.logo{
+    width: 300px;
+}
+
+.post{
+    padding:10px;
+    background-color:royalblue;
+    color: peru;
+}
