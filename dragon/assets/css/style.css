@@ -16,11 +16,18 @@ html {
 
 body{
     font-family: 'Bitter', serif;
-    background-color: bisque;
+    background-color: cornflowerblue;
+}
+
+h1, h2, h3{
+    color:black
+}
+
+p{
+    color:white;
 }
 
 header.primary {
-    background-color: peru;
     text-align:center;
     padding: 10px;
 }
@@ -38,15 +45,51 @@ header.primary nav ul {
 header.primary nav ul li{
     padding:10px;
     text-align:center;
-    background-color: royalblue;
+}
+
+a{
+    color:bisque;
 }
 
 .logo{
-    width: 300px;
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
 }
 
 .post{
     padding:10px;
-    background-color:royalblue;
-    color: peru;
+}
+
+table{
+    width:100%;
+    border:1px solid white;
+    border-collapse:collapse;
+    color:white;
+    background-color: bisque;
+}
+
+tr:nth-child(even){
+    background-color:rgba(205, 133, 63, .5);
+}
+
+td:nth-child(2n), td:nth-child(3n){
+    text-align:right;
+}
+
+th{
+    background:peru;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:5px;
+}
+
+@media screen and (max-width:530px) {
+    header.primary nav ul {
+        flex-direction: column;
+    }
 }
