@@ -26,6 +26,16 @@ header.primary h1{
     border-bottom: 2px solid black;
 }
 
+h2{
+    padding: 40px 20px 0px 20px;
+    text-align:center;
+}
+
+p{
+    padding: 0px 20px 0px 20px;
+    text-align:center;
+}
+
 nav ul li {
     padding: 20px 0px 20px 0px;
     list-style-type:none;
