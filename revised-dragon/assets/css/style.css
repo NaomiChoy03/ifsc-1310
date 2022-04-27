@@ -1,0 +1,95 @@
+/*
+Stylesheet for Dragon
+*/
+
+/* Box Sizing */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global Styles */
+
+body{
+    font-family: 'Teko', sans-serif;
+    background-color: cornflowerblue;
+}
+
+h1, h2, h3{
+    color:black
+}
+
+p{
+    color:white;
+}
+
+header.primary {
+    text-align:center;
+    padding: 10px;
+}
+
+header.primary nav ul {
+    padding:20px;
+    display:flex;
+    flex-direction:row;
+
+    justify-content:center;
+    justify-content: space-between;
+    list-style-type:none;
+}
+
+header.primary nav ul li{
+    padding:10px;
+    text-align:center;
+}
+
+a{
+    color:bisque;
+}
+
+.logo{
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+}
+
+.post{
+    padding:10px;
+}
+
+table{
+    width:100%;
+    border:1px solid white;
+    border-collapse:collapse;
+    color:white;
+    background-color: rgba(62, 62, 219, 0.5);
+}
+
+tr:nth-child(even){
+    background-color:rgb(62, 62, 219);
+}
+
+td:nth-child(2n), td:nth-child(3n){
+    text-align:right;
+}
+
+th{
+    background:darkblue;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:5px;
+}
+
+@media screen and (max-width:530px) {
+    header.primary nav ul {
+        flex-direction: column;
+    }
+}
